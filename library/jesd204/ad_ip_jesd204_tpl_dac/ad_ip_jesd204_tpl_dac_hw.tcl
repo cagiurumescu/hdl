@@ -29,6 +29,8 @@ ad_ip_create ad_ip_jesd204_tpl_dac "JESD204 Transport Layer for DACs" p_ad_ip_je
 set_module_property VALIDATION_CALLBACK p_ad_ip_jesd204_tpl_dac_validate
 ad_ip_files ad_ip_jesd204_tpl_dac [list \
   $ad_hdl_dir/library/intel/common/ad_mul.v \
+  $ad_hdl_dir/library/common/ad_mux.v \
+  $ad_hdl_dir/library/common/ad_mux_core.v \
   $ad_hdl_dir/library/common/ad_dds_sine.v \
   $ad_hdl_dir/library/common/ad_dds_cordic_pipe.v \
   $ad_hdl_dir/library/common/ad_dds_sine_cordic.v \
